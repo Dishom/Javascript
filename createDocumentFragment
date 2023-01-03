@@ -1,0 +1,44 @@
+HTML DOM Document createDocumentFragment():
+
+
+The createDocumentFragment() method creates an offscreen node[ Here, offscreen means that the node is not actually added to the DOM until it is appended to the existing DOM element ].
+DocumentFragment is a JavaScript interface that represents a minimal document object which has no parent.
+DocumentFragment is not the part of active DOM tree
+As it is out of DOM-tree so the changes you make does not effect the actual DOM tree , thus improves performance
+
+Syntax:
+document.createDocumentFragment()
+
+Code :
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Document Object</h1>
+<h2>The createDocumenFragment Method</h2>
+
+<p>Add array items to an empty list::</p>
+
+<ul id="myList">
+</ul>
+
+<script>
+const fruits = ["Guava", "Apple", "Mango"];
+
+// Create a document fragment:
+const docFrag = document.createDocumentFragment();
+for (let x in fruits) {
+  const li = document.createElement('li');
+  li.textContent = fruits[x];
+  docFrag.appendChild(li);
+}
+
+// Add fragment to a list: 
+document.getElementById('myList').appendChild(docFrag);
+</script>
+
+</body>
+</html>
+
+[ source : https://codetopology.com / google /w3school ]
