@@ -1,0 +1,25 @@
+How a javascript code run behind ?
+
+
+So, a client-side JavaScript program runs inside a browser. When we write a JavaScript code and run it inside the browser,
+there is a lot of things happen behind the scene. 
+
+Every browser has something called as a JavaScript engine that is responsible for executing JavaScript code.
+There are many JavaScript engines like V8 of Google chrome, SpiderMonkey for Firefox etc.
+
+All JavaScript code needs to run in an environment and these environments are called execution context.
+You can imagine an execution context like a box or a container which store variables and in which a piece of JavaScript code is evaluated and executed.
+
+
+When a function is called, a new execution stack is put on top of the currently executing execution stack.
+JavaScript engine creates the execution context in the following two stages:
+1. Creation Phase : Creates the Variable object: Variable object is a special object in JavaScript which contain all the variables,
+   function arguments and inner functions declaration information. 
+2. Execution Phase :Once the variable object gets created, the JavaScript engine initializes the scope chain which is a list of all the variables objects,
+   inside which the current function exists.
+   This also includes the variable object of the global execution context. 
+   Scope chain also contains the current function variable object.
+   
+
+
+
