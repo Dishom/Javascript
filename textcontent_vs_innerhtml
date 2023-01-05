@@ -1,0 +1,37 @@
+nodeValue vs innerHTML and textContent.???
+
+a. innerHTML parses content as HTML, so it takes longer.
+b. nodeValue uses straight text, does not parse HTML, and is faster.
+c. textContent uses straight text, does not parse HTML, and is faster.
+d. innerText Takes styles into consideration. It won't get hidden text for instance.
+
+##############################################################
+
+textContent gets the content of all elements, including <script> and <style> elements. In contrast, innerText only shows "human-readable" elements.
+
+textContent returns every element in the node. In contrast, innerText is aware of styling and won't return the text of "hidden" elements.
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@
+var heading = document.getElementById('heading')
+var paragraph = document.getElementById('paragraph')
+
+setTimeout(function () {
+  heading.textContent = 'My New Title!'
+  paragraph.textContent = 'My second <em>six word</em> story.'
+}, 2000)
+em { font-style: italic; }
+
+Solution :
+
+My New Title!
+My second <em>six word</em> story.
+@@@@@@@@@@@@@@@@@@@@@@@@@@
+Conclusiion : 
+# There fore the result shows that the text content  just changes the text, but it doesn't parse HTML, 
+  as we can tell from the tags visible in plain text in the result there.
+
+# SO IF WE WANT TO PARSE than we should use : innerHTML
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+source [stack overflow / google / w3school /MDN docs]
