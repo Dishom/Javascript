@@ -25,4 +25,11 @@ and merging them into a single file: a “bundle”.
 
 ------------------------------------------------------------------------------------------------@@
 
-resource : [https://snipcart.com/blog/javascript-module-bundler]
+First of all, what is a JavaScript bundler?
+
+A JavaScript bundler is a tool that puts your code and all its dependencies together in one JavaScript file.
+There are many of them out there these days, being the most popular ones browserify and webpack.
+
+
+
+resource : [https://snipcart.com/blog/javascript-module-bundler/https://medium.com/@gimenete/how-javascript-bundlers-work-1fc0d0caf2da]
