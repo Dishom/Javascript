@@ -1,0 +1,48 @@
+What is a package manager ?
+
+Package managers are charged with the task of finding, installing, maintaining or uninstalling software packages upon the user's command.
+
+A project dependency can be an entire JavaScript library or framework — such as React or Vue — or a very small utility like our human-readable date library,
+or it can be a command line tool such as Prettier or ESLint, which we talked about in previous articles.
+
+Without modern build tools, dependencies like this might be included in your project using a simple <script> element, but this might not work right out of the
+box and you will likely need some modern tooling to bundle your code and dependencies together,when they are released on the web. 
+
+ #A bundle is the term that's generally used to refer to a single file on your web server that contains all the JavaScript for your software — typically
+ compressed as much as possible to help reduce the time it takes to get your software downloaded and displayed in your visitors' browser.
+
+ If you didn't use one, you'd have to manually handle:
+
+Finding all the correct package JavaScript files.
+Checking them to make sure they don't have any known vulnerabilities.
+Downloading them and putting them in the correct locations in your project.
+Writing the code to include the package(s) in your application (this tends to be done using JavaScript modules, another subject that is worth reading up on and understanding).
+Doing the same thing for all of the packages' sub-dependencies, of which there could be tens, or hundreds.
+Removing all the files again if you want to remove the packages.
+
+all this should me done manually if no package manager is installed
+
+To install a package manager [npm this time] : 
+
+We use 
+a. npm init -y [y use to skip all questioned asked ]
+b. package.json will get in you directory that look like : 
+
+{
+  "name": "name",
+  "version": "1.0.0",
+  "description": "A simple npm package to learn about using npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Mills",
+  "license": "ISC"
+}
+
+
+
+
+
+
+source : [ https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Package_management ]
