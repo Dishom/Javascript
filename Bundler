@@ -1,0 +1,28 @@
+What does Bundler mean?
+
+A person or thing who bundle material or products for ease of handling
+
+-------------------------------------------------------------------------------------- @@
+What are bundlers used for?
+
+A bundler is a developement tool that combines many JS code files into a one file that is production ready , loadable in browser
+
+----------------------------------------------------------------------------------------------------------------------------------@@
+Bundler and npm are primarily classified as "Dependency Management" and "Front End Package Manager" tools respectively.
+
+---------------------------------------------------------------------------------------------------------------------------@@
+
+Is Babel a bundler?
+
+It is a module bundler for JavaScript which compiles small pieces of code into something larger and more complex, such as a library or application
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------@@
+
+What are Bundlers in react JS?
+
+Bundling. Most React apps will have their files “bundled” using tools like Webpack, Rollup or Browserify. Bundling is the process of following imported files 
+and merging them into a single file: a “bundle”.
+
+------------------------------------------------------------------------------------------------@@
+
+resource : [https://snipcart.com/blog/javascript-module-bundler]
